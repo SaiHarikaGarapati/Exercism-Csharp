@@ -1,4 +1,5 @@
-﻿class Lasagna
+//Lucian's Luscious Lasagna - Exercism.org 
+class Lasagna
 {
     public const int time = 40;
     // TODO: define the 'ExpectedMinutesInOven()' method
