@@ -1,0 +1,33 @@
+// See https://aka.ms/new-console-template for more information
+//Longest Common Prefix
+using System.Text;
+
+public class Solution
+{
+    public string LongestCommonPrefix(string[] strs)
+    {
+
+        var sb = new StringBuilder(); // initialize a stringbuilder to append the common prefix 
+        for (int i = 0; i < strs[0].Length; i++) // looping a string for the comparison with other strings
+        {
+            char c = strs[0][i];
+            for (int j = 1; j < strs.Length; j++)
+            {
+                if (i == strs[j].Length || strs[j][i] != c)
+                {
+                    return sb.ToString();
+                }
+            }
+            sb.Append(c);
+        }
+        return sb.ToString();
+    }
+}
+class Duplicate{
+    public static void  Main(string[] args) 
+    {
+        Solution s = new Solution();
+         string output  = s.LongestCommonPrefix(new string [] {"flower","flower","flower"});
+        Console.WriteLine(output);
+    }
+}
