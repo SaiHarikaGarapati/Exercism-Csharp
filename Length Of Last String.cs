@@ -23,7 +23,7 @@ public class Last
     public static void Main(string[] args)
     {
         Solution s = new Solution();
-        Console.WriteLine(s.LengthOfLastWord("Hello World  "));
+        Console.WriteLine(s.LengthOfLastWord("Pass your input here  "));
         Console.ReadKey();
     }
 }
